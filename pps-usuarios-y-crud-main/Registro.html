@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="EstilosFormulario.css">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="enviar.php" method="post">
+        <div class="preguntas">
+        <label for="nombre">Escriba su nombre:</label>
+        <br>
+        <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="preguntas">
+        <br>
+        <label for="correo">Escriba su correo electrónico:</label>
+        <br>
+        <input type="email" id="correo" name="correo">
+        </div>
+        <div class="preguntas">
+        <br>
+        <label for="contra">Escriba su contraseña:</label>
+        <br>
+        <input type="password" id="contra" name="contra">
+        </div>
+        <br>
+        <div class="preguntas">
+        <label for="contra2">Confirme la contraseña:</label>
+        <br>
+        <input type="password" id="contra2" name="contra2">
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Registrarme" class="envio">
+    </form>
+    <a href="Login.html">¿Tienes cuenta? Inicia sesión</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="EstilosFormulario.css">
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form action="login.php" method="post">
+        <div class="preguntas">
+            <label for="correo">Correo Electrónico:</label>
+            <br>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="preguntas">
+            <br>
+            <label for="contra">Contraseña:</label>
+            <br>
+            <input type="password" id="contra" name="contra" required>
+        </div>
+        <br>
+        <input type="submit" value="Iniciar Sesión" class="envio">
+    </form>
+    <br>
+    <a href="Registro.html">¿No tienes cuenta? Crea una aquí</a>
+</body>
+</html>
